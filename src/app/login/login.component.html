@@ -1,0 +1,26 @@
+<div class="login-container">
+  <img src="/logo.png" alt="PMAnimal Logo" class="logo">
+  <a href="/">
+    <button class="beautiful-button">Voltar</button>
+</a>
+  <div class="login-form">
+    <form class="form2" (ngSubmit)="onSubmit()">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="username">Nome</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <div class="form-group">
+        <a href="#" class="forgot-password">Esqueceu a sua password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+      <div class="form-group">
+        <a href="/register" class="register-link">Não tem conta? Registe-se</a>
+      </div>
+    </form>
+  </div>
+</div>
